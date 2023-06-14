@@ -1,1 +1,61 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.registration__actions--providers {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.login__field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav_links_list {
+  list-style: none;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.footer__description {
+  text-align: center;
+}
+
+.footer__credits {
+  text-align: center;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-logo__img {
+  width: 50px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .inline_block-hamburger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__search-field {
+    display: none;
+  }
+  .top-nav--login {
+    display: none;
+  }
+  .container_hamburger {
+    align-self: flex-end;
+  }
+}/*# sourceMappingURL=styles.css.map */
