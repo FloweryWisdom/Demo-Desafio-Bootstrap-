@@ -16,18 +16,18 @@
     <div class="header">
         <div class="header__container">
             <span class="container-hamburger">
-                <button class="c-btn c-btn--icon-alone js-hamburger-trigger mx-2">
+                <button class="hamburger-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a3t9cpesmy4eq65q7ntdjkku4jkx9onc" class="hamburger-icon">
                         <title id="a3t9cpesmy4eq65q7ntdjkku4jkx9onc">Navigation menu</title>
                         <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
                     </svg>
                 </button>
             </span>
-            <a href="#" class="site_logo">
-                <a href="/" class="site-logo" aria-label="DEV Community Home">
-                    <img class="site-logo__img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="DEV Community">
-                </a>
+            
+            <a href="" class="nav__site-logo" aria-label="DEV Community Home">
+                <img class="site-logo__img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="DEV Community">
             </a>
+        
             <div class="header__search-field">
                 <form method="get" action="/search" role="search" accept-charset="UTF-8">
                     <input name="utf8" type="hidden" value="✓">
@@ -43,15 +43,15 @@
                     </div>
                 </form>
             </div>
-            <div class="flex items center h-100 ml-auto">
-                <a class="c-link c-link--icon-alone c-link--block m:hidden mx-1" id="search-link" aria-label="Search" href="/search">
+            <div class="nav__right-search">
+                <a class="right__search-icon" id="search-link" aria-label="Search" href="/search">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="afgpulyiigl5zt8ihwv1i4hcimsswipk" class="crayons-icon">
                         <title id="afgpulyiigl5zt8ihwv1i4hcimsswipk">Search</title>
                         <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"></path>
                     </svg>
                 </a>
             </div>
-            <div id="authentication-top-nav-actions" class="flex">
+            <div id="top__nav-actions" class="flex">
                     <span class="top-nav--login">
                         <a href="#" class="c-link--block mr-2 whitespace-nowrap ml-auto">Log in</a>
                     </span>
@@ -61,7 +61,7 @@
     </div>
     
     <div class="main">
-        <div class="card__login" style="width: 18rem;">
+        <div class="card__login" style="width: 40rem;">
             <div class="card-body">
                 <div class="registration__content">
                     <h1 class="registration__title">Welcome to the DEV community</h1>
@@ -72,7 +72,7 @@
                         <div class="registration__action--option d-flex bg-primary">1</div>
                         <div class="registration__action--option d-flex bg-secondary">2</div>
                         <div class="registration__action--option d-flex bg-danger">3</div>
-                        <div class="registration__action--option d.flex bg-warning">4</div>
+                        <div class="registration__action--option d-flex bg-warning">4</div>
                     </div>
                     <div class="registration__actions--email">
                         <div class="registration__hr">
@@ -106,7 +106,7 @@
           </div>
     </div>
 
-    <div class="footer p-2">
+    <div class="footer">
         <div class="footer__container" id="footer__container" >
             <p class="footer__description">
                 <a href="#" class="company__link">DEV Community</a>
