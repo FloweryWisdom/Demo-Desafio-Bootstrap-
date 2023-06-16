@@ -36,17 +36,29 @@ body {
   height: 30px;
 }
 
-.registration__action--option {
-  height: 2rem;
+.forem-bg {
+  background-color: rgb(13, 54, 64);
+}
+
+.twitter-bg {
+  background-color: rgb(58, 160, 242);
 }
 
 .nav__site-logo {
   margin-right: auto;
 }
 
+.login__icon--color {
+  color: white;
+}
+
 .login__field-container {
   display: flex;
   flex-direction: column;
+}
+
+.registration__hr-label {
+  width: 42px;
 }
 
 #nav_links_list {
@@ -55,12 +67,22 @@ body {
   justify-content: center;
 }
 
+.footer {
+  background-color: rgb(229, 229, 229);
+}
+
+.footer__container {
+  background-color: rgb(229, 229, 229);
+}
+
 .footer__description {
   text-align: center;
+  background-color: rgb(229, 229, 229);
 }
 
 .footer__credits {
   text-align: center;
+  background-color: rgb(229, 229, 229);
 }
 
 .header__container {

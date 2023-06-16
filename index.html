@@ -52,7 +52,7 @@
                 </a>
             </div>
             <div id="top__nav-actions" class="flex">
-                    <span class="top-nav--login">
+                    <span class="top-nav--login rounded">
                         <a href="#" class="c-link--block mr-2 whitespace-nowrap ml-auto">Log in</a>
                     </span>
                     <a href="#" class="create__account-btn"> <button>Create account</button></a>
@@ -62,42 +62,55 @@
     
     <div class="main">
         <div class="card__login" style="width: 40rem;">
-            <div class="card-body">
+            <div class="card-body text-center">
                 <div class="registration__content">
-                    <h1 class="registration__title">Welcome to the DEV community</h1>
-                    <p class="registration__description">Dev community is a community of 1,082,605 amazing developers</p>
+                    <h1 class="registration__title mb-0 ">Welcome to the DEV community</h1>
+                    <p class="registration__description mb-4">Dev community is a community of 1,082,605 amazing developers</p>
                 </div>
                 <div class="registration__actions">
-                    <div class="registration__actions--providers">
-                        <div class="registration__action--option d-flex bg-primary">1</div>
-                        <div class="registration__action--option d-flex bg-secondary">2</div>
-                        <div class="registration__action--option d-flex bg-danger">3</div>
-                        <div class="registration__action--option d-flex bg-warning">4</div>
+                    <div class="registration__actions--providers text-white">
+                        <button  class="registration__action--option d-flex justify-content-center bg-dark rounded text-white fw-bold p-3" >
+                            <img class="login__icon--color me-2" src="./css/icon-apple.svg" alt="">
+                            <span>Continue with Apple</span>
+                            
+                        </button>
+                        <button class="registration__action--option d-flex justify-content-center forem-bg rounded text-white fw-bold p-3">
+                            <img class="me-2" src="./css/icon-forem.svg" alt="">
+                            <span>Continue with Forem</span>
+                        </button>
+                        <button class="registration__action--option d-flex justify-content-center bg-secondary rounded text-white fw-bold p-3">
+                            <img class="me-2 text-light" src="./css/icon-github-login.svg" alt="">
+                           <span> Continue with GitHub</span>
+                        </button>
+                        <button class="registration__action--option d-flex justify-content-center twitter-bg rounded text-white fw-bold p-3">
+                            <img class="me-2" class="img__twitter" src="./css/icon-twitter-login.svg" alt="">
+                            <span>Continue with Twitter</span>
+                        </button>
                     </div>
                     <div class="registration__actions--email">
-                        <div class="registration__hr">
+                        <div class="registration__hr p-4">
                             <span class="registration__hr-label">Have a password? Continue with your email address</span>
                         </div>
                         <form action="" class="login__form">
                             <div class="login__field-container">
-                                <label for="user_email" class="email-label">Email</label>
-                                <input type="text" id="user_email" class="email-field">
+                                <label for="user_email" class="email-label d-flex justify-content-start p-3 fw-bold">Email</label>
+                                <input type="email" id="user_email" class="email-field form-control">
                             </div>
                             <div class="login__field-container">
-                                <label for="user_password" class="password-label">Password</label>
-                                <input type="text" id="user_password" class="password-field">
+                                <label for="user_password" class="password-label d-flex justify-content-start p-3 fw-bold">Password</label>
+                                <input type="password" id="user_password" class="password-field form-control">
                             </div>
-                            <div class="login__checkbox">
+                            <div class="login__checkbox d-flex justify-content-start p-3">
                                 <input name="user[remember_me]" type="hidden" value="0" autocomplete="off" >
-                                <input type="checkbox" checked="checked" class="checkbox_box" name="user[remember_me]" id="user_remember_me" value="1" >
+                                <input type="checkbox" checked="checked" class="checkbox_box me-2" name="user[remember_me]" id="user_remember_me" value="1" >
                                 <label for="user_remember_me" class="checkbox-label">Remember me</label>
                             </div>
                             <div class="login__form--continue">
-                                <input type="submit" name="commit" value="Continue" data-disable-with="Continue" class="continue-btn--lw-100">
+                                <button type="submit" name="commit" value="Continue" data-disable-with="Continue" class="continue-btn--lw-100 btn btn-primary w-100 p-2 ">Continue</button>
                             </div>  
                         </form>
-                        <p class="pt-6 fs-s align-center">
-                            <a href="#">I forgot my password</a>
+                        <p class="pt-6 fs-s align-center pt-4">
+                            <a href="https://dev.to/users/password/new" class="text-decoration-none">I forgot my password</a>
                         </p>
                     </div>
                 
@@ -107,87 +120,87 @@
     </div>
 
     <div class="footer">
-        <div class="footer__container" id="footer__container" >
+        <div class="footer__container fw-medium"  id="footer__container">
             <p class="footer__description">
-                <a href="#" class="company__link">DEV Community</a>
+                <a href="https://dev.to/" class="company__link text-center">DEV Community</a>
                 A constructive and inclusive social network for software developers. With you every step of your journey.
             </p>
             <ul  id="nav_links_list" class="footer__nav-links d-flex gap-2 justify-center flex-wrap">
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Home</a>
+                    <a href="https://dev.to/"  class="text-decoration-none">Home</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Listings</a>
+                    <a href="https://dev.to/listings" class="text-decoration-none">Listings</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Podcasts</a>
+                    <a href="https://dev.to/pod" class="text-decoration-none">Podcasts</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Videos</a>
+                    <a href="https://dev.to/videos" class="text-decoration-none">Videos</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Tags</a>
+                    <a href="https://dev.to/tags" class="text-decoration-none">Tags</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">FAQ</a>
+                    <a href="https://dev.to/faq" class="text-decoration-none">FAQ</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Forem Shop</a>
+                    <a href="https://shop.forem.com/" class="text-decoration-none">Forem Shop</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Sponsors</a>
+                    <a href="https://dev.to/sponsorships" class="text-decoration-none">Sponsors</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">About</a>
+                    <a href="https://dev.to/about" class="text-decoration-none">About</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Contact</a>
+                    <a href="https://dev.to/contact" class="text-decoration-none">Contact</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Guides</a>
+                    <a href="https://dev.to/guides" class="text-decoration-none">Guides</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Software Comparisons</a>
+                    <a href="https://dev.to/software-comparisons" class="text-decoration-none">Software Comparisons</a>
                 </li>
             </ul>
             <ul id="nav_links_list" class="footer__nav-links d-flex gap-2 justify-center flex-wrap">
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Code of Conduct</a>
+                    <a href="https://dev.to/code-of-conduct" class="text-decoration-none">Code of Conduct</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Privacy Policy</a>
+                    <a href="https://dev.to/privacy" class="text-decoration-none">Privacy Policy</a>
                     <span class="dot text-secondary">•</span>
                 </li>
                 <li class="footer__nav-link flex items-center">
-                    <a href="#">Terms of use</a>
+                    <a href="https://dev.to/terms" class="text-decoration-none">Terms of use</a>
 
                 </li>
             </ul>
             <div class="footer__credits">
                 <p>
                     Built on
-                    <a href="#">Forem</a>
+                    <a href="https://www.forem.com/" class="text-decoration-none">Forem</a>
                     - the 
-                    <a href="#">Open Source</a>
+                    <a href="https://dev.to/t/opensource" class="text-decoration-none">Open Source</a>
                     software that powers
-                    <a href="#">DEV</a>
+                    <a href="https://dev.to/" class="text-decoration-none">DEV</a>
                     and other inclusive communities.
                 </p>
                 <p>
                     Made with love and 
-                    <a href="#">Ruby on rails</a>
+                    <a href="https://dev.to/t/rails" class="text-decoration-none">Ruby on rails</a>
                     . DEV Community
                     <span class="copyright">©</span>
                     2026 - 2023

@@ -23,7 +23,7 @@ body {
     margin-bottom: 30px;
     margin-left: 80px;
     margin-right: 80px;
-    padding: 40px
+    padding: 40px;
 }
 
 .registration__actions--providers {
@@ -36,17 +36,32 @@ body {
 
 }
 
-.registration__action--option {
-    height: 2rem;
+
+.forem-bg{
+    background-color: rgb(13,54,64);
+}
+
+.twitter-bg{
+    background-color: rgb(58,160,242);
 }
 
 .nav__site-logo {
     margin-right:auto
 }
 
+.login__icon--color{
+    color: white;
+}
+
+
 .login__field-container {
     display: flex;
     flex-direction: column;
+}
+
+
+.registration__hr-label{
+    width: 42px;
 }
 
 #nav_links_list {
@@ -54,13 +69,22 @@ body {
     padding-left: 0;
     justify-content: center;
 }
+.footer{
+    background-color: rgb(229,229,229);
+}
 
-.footer__description {
+.footer__container{
+    background-color: rgb(229,229,229);
+}
+.footer__description{
     text-align: center;
+    background-color: rgb(229,229,229);
+    
 }
 
 .footer__credits {
     text-align: center;
+    background-color: rgb(229,229,229);
 }
 
 
@@ -83,6 +107,7 @@ body {
         display: none;
     }
 
+    
     .hamburger-button {
         display: none;
     }
